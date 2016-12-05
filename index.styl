@@ -1,0 +1,203 @@
+@import vars
+@import basic
+
+html,body
+  width: 100%
+  height: 100%
+  margin: 0
+  padding: 0
+  background: #f2f2f2
+  font-size: 18px
+
+.grayed
+  color: #999
+
+.section
+  padding: 40px 40px
+  margin: 0 auto
+  max-width: 1280px
+  background: #fff
+  box-shadow: 0 0 3px 1px rgba(0,0,0,0.3)
+  & > .inner
+    max-width: 800px
+    margin: auto
+
+@media(max-width: 1280px)
+  .section
+    max-width: 90%
+@media(max-width: 640px)
+  .section
+    max-width: 100%
+    box-shadow: none
+
+#schedule
+  font-weight: 100
+  h4
+    font-size: 1.15em
+    font-weight: 600
+
+#schedule.section > .inner
+  max-width: 900px
+
+.subsection
+  margin-bottom: 80px
+  .inner
+    border-left: 3px solid #fff
+    padding-left: 95px
+
+#schedule img
+  float: left
+  margin: 0 50px 10px -55px
+
+#schedule
+  @media(max-width: 480px)
+    &.section
+      padding: 10px
+    .subsection
+      .date
+        display: block
+        font-size: 0.8em
+        margin-top: 5px
+      .btn-xl
+        width: 100%
+      img
+        width: 70px
+        margin-left: 0
+        margin-right: 10px
+      .inner
+        padding-left: 15px
+        li
+          padding-left: 0
+
+.subsection h2
+  margin-top: 15px
+.btn-xl
+  font-size: 20px
+  padding: 8px 30px
+  margin-top: 5px
+
+h3
+  display: inline-block
+  padding-bottom: 5px
+  border-bottom: 4px solid #e95513
+  margin-bottom: 26px
+  font-size: 1.5em
+
+.g0v
+  display: inline-block
+  font-family: consolas
+  &:after
+    content: "g0v"
+    display: inline
+
+.g0vtw
+  display: inline-block
+  font-family: consolas
+  &:after
+    content: "g0v.tw"
+    display: inline
+
+.btn.btn-primary
+  background: #15a9a4
+
+.btn.btn-danger
+  background: #e95513
+
+.media
+  display: flex
+  margin-bottom: 40px
+
+.media-object
+  width: 80px
+  height: 80px
+  border-radius: 50%
+  margin-right: 10px
+
+.sponsor
+  width: 250px
+  height: 85px
+  background: #d8d8d8
+  display: inline-block
+  margin: 8px 8px
+
+#landing
+  background: url(img/landing2.png) top center no-repeat
+  background-size: cover
+  width: 100%
+  height: 600px
+  h1
+    margin-bottom: 0
+  h2
+    margin-top: 0
+  h3
+    border: none
+    margin-top: 40px
+  .inner
+    padding-top: 120px
+    padding-left: 50px
+    max-width: 1280px
+    margin: auto
+  @media (max-width: 480px)
+    .inner
+      padding-left: 20px
+    h1
+      font-size: 30px
+    h2
+      font-size: 20px
+    h3
+      font-size: 20px
+
+#about
+  border-radius: 15px 15px 0 0
+  margin-top: 0
+  @media (max-width: 640px)
+    border-radius: 0
+    border-top: 4px solid #ccc
+
+#schedule
+  h2
+    display: block
+    border-bottom: 0
+    font-weight: 300
+    .date
+      display: inline-block
+      margin-left: 30px
+      font-size: 0.9em
+  h4
+    font-weight: 300
+    margin: 20px 0
+  background: #001c2f
+  color: #ffffff
+
+#fordummies
+  background: #f7b52c
+  .slideshow
+    width: 90%
+    height: 400px
+    margin: 50px 5%
+    background: #fff
+
+#faq
+  h3
+    margin-top: 5px
+  p
+    color: #555555
+    font-weight: 200
+
+#team
+  color: #fff
+  background: #15a9a4
+  font-weight: 100
+  font-size: 0.9em
+  h4
+    margin-bottom: 10px
+  & > .inner
+    width: 90%
+    max-width: 90%
+  .media-body p
+    font-size: 0.9em
+
+#footer
+  width: 100%
+  height: 240px
+  background: #001c2f
