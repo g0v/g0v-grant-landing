@@ -228,7 +228,7 @@ h3 {
   font-size: 0.9em;
 }
 #schedule h4 {
-  font-weight: 300;
+  font-weight: 400;
   margin: 20px 0;
 }
 #fordummies {
@@ -243,7 +243,8 @@ h3 {
 #faq h3 {
   margin-top: 5px;
 }
-#faq p {
+#faq p,
+#faq li {
   color: #555;
   font-weight: 200;
 }
