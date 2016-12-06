@@ -250,6 +250,14 @@ h3 {
   height: 200px;
   text-align: right;
 }
+@media (max-width: 768px) {
+  #faq h2 {
+    height: auto;
+    margin-bottom: 30px;
+    border-right: 0;
+    text-align: left;
+  }
+}
 #faq h3 {
   margin-top: 5px;
 }
