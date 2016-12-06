@@ -117,6 +117,10 @@ b {
   padding: 8px 30px;
   margin-top: 5px;
 }
+.btn-xl.disabled.btn-primary {
+  background: #999;
+  border-color: #888;
+}
 h3 {
   display: inline-block;
   padding-bottom: 5px;
