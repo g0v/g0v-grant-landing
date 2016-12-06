@@ -9,7 +9,7 @@ doctype html
 - var og = {}
 - og.title = title
 - og.twitter = {type: "summary_large_image", site: "@g0vtw", creator: "@g0vtw"}
-- og.domain = "g0v.tw"
+- og.domain = "grant.g0v.tw"
 - og.url = ""
 - og.thumbnail = {width: 1200, height: 630, type: "image/png"}
 - og.thumbnail.url = "thumbnail.png"
@@ -26,8 +26,25 @@ html(lang="en")
     include library.jade
     // custom files
     link(rel="stylesheet",type="text/css",href="index.css")
+    //-link(href="https://fonts.googleapis.com/css?family=Noto+Sans",rel="stylesheet")
+    link(href="https://fonts.googleapis.com/earlyaccess/notosanstc.css",rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Roboto",rel="stylesheet")
+
     script(type="text/javascript",src="index.js")
   body
+    nav.navbar.navbar-default.navbar-fixed-top
+      .container-fluid
+        .navbar-header
+          a.navbar-brand(href="#"): img(src="img/brand.png")
+        .collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li: a(href="#") 關於 #[span.g0v] Grant
+            li: a(href="#") 活動辦法
+            li: a(href="#") 常見問題
+            li: a(href="#") 執行團隊
+            li: a(href="#") 合作夥伴
+
+
     include jade/landing.jade
     include jade/about.jade
     include jade/schedule.jade
