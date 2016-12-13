@@ -214,9 +214,6 @@ h3 {
   margin: auto;
 }
 @media (max-width: 480px) {
-  #landing .inner {
-    padding-left: 20px;
-  }
   #landing h1 {
     font-size: 30px;
   }
