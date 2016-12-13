@@ -154,12 +154,8 @@ h3 {
   font-size: 1.5em;
 }
 .g0v {
-  display: inline-block;
-  font-family: consolas;
-}
-.g0v:after {
-  content: "g0v";
   display: inline;
+  font-family: consolas;
 }
 .g0vtw {
   display: inline-block;
