@@ -524,9 +524,6 @@ width: 100%;
     font-size: 1.2em;
   }
 }
-.gallery {
-  display: block;
-}
 .gallery .thumbnail {
   width: 100%;
   height: 160px;
