@@ -1,4 +1,28 @@
 #fordummies.section
-  .slideshow
+  .slideshow(style="position:relative;height:0;overflow:hidden;padding-bottom:41.7%")
+    #dummy-carousel.carousel.slide(data-ride='carousel',style="position:absolute;top:0;left:0;width:100%;height:100%")
+      // Indicators
+      ol.carousel-indicators
+        li.active(data-target='#dummy-carousel', data-slide-to='0')
+        li(data-target='#dummy-carousel', data-slide-to='1')
+        li(data-target='#dummy-carousel', data-slide-to='2')
+      // Wrapper for slides
+      .carousel-inner(role='listbox')
+        .item.active
+          img(src='img/intro-slides/slide01.jpg')
+          .carousel-caption
+        each i in ['02','03','04','05','06','10','11']
+          .item
+            img(src='img/intro-slides/slide' + i + '.jpg')
+            .carousel-caption
+      // Controls
+      a.left.carousel-control(href='#dummy-carousel', role='button', data-slide='prev')
+        span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+        span.sr-only Previous
+      a.right.carousel-control(href='#dummy-carousel', role='button', data-slide='next')
+        span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+        span.sr-only Next
   .text-center
     .btn.btn-danger.btn-lg #[i.fa.fa-arrow-down] 活動細節下載
+script(type="text/javascript").
+  $('.carousel').carousel({interval: 2000});
