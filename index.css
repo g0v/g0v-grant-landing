@@ -504,3 +504,6 @@ width: 100%;
   padding-top: 5px;
   background: #203c4f;
 }
+.carousel-indicators li {
+  border-color: #999;
+}
