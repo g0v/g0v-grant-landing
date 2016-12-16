@@ -168,7 +168,6 @@ h3
   width: 270px
   display: inline-block
   margin: 8px 16px
-  min-height: 230px
   vertical-align: top
   position: relative
   .banner
@@ -192,7 +191,9 @@ h3
     font-weight: 100
     border-radius: 5px
     opacity: 0
-.sponsor:hover
+.sponsor.partner
+  min-height: 230px
+.sponsor.partner:hover
   .oneword, .banner
     animation(fadeout 0.5s 1 linear forwards)
   .detail

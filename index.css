@@ -315,7 +315,6 @@ width: 100%;
   width: 270px;
   display: inline-block;
   margin: 8px 16px;
-  min-height: 230px;
   vertical-align: top;
   position: relative;
 }
@@ -343,15 +342,18 @@ width: 100%;
   border-radius: 5px;
   opacity: 0;
 }
-.sponsor:hover .oneword,
-.sponsor:hover .banner {
+.sponsor.partner {
+  min-height: 230px;
+}
+.sponsor.partner:hover .oneword,
+.sponsor.partner:hover .banner {
   -ms-animation: fadeout 0.5s 1 linear forwards;
   -moz-animation: fadeout 0.5s 1 linear forwards;
   -webkit-animation: fadeout 0.5s 1 linear forwards;
   -o-animation: fadeout 0.5s 1 linear forwards;
   animation: fadeout 0.5s 1 linear forwards;
 }
-.sponsor:hover .detail {
+.sponsor.partner:hover .detail {
   display: block;
   -ms-animation: fadein 0.5s 1 linear forwards;
   -moz-animation: fadein 0.5s 1 linear forwards;
