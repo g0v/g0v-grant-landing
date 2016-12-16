@@ -181,12 +181,183 @@ h3 {
   border-radius: 50%;
   margin-right: 10px;
 }
+width: 100%;
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+width: 100%;
+@-webkit-keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@-webkit-keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@-moz-keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@-ms-keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@-moz-keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@-webkit-keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@-o-keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
 .sponsor {
+  width: 270px;
+  display: inline-block;
+  margin: 8px 16px;
+  min-height: 230px;
+  vertical-align: top;
+  position: relative;
+}
+.sponsor .banner {
   width: 250px;
   height: 85px;
   background: #d8d8d8;
   display: inline-block;
-  margin: 8px 8px;
+  margin-bottom: 10px;
+  opacity: 1;
+}
+.sponsor .oneword {
+  font-size: 1em;
+  opacity: 1;
+}
+.sponsor .detail {
+  display: none;
+  font-size: 0.78em;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  font-weight: 100;
+  border-radius: 5px;
+  opacity: 0;
+}
+.sponsor:hover .oneword,
+.sponsor:hover .banner {
+  -ms-animation: fadeout 0.5s 1 linear forwards;
+  -moz-animation: fadeout 0.5s 1 linear forwards;
+  -webkit-animation: fadeout 0.5s 1 linear forwards;
+  -o-animation: fadeout 0.5s 1 linear forwards;
+  animation: fadeout 0.5s 1 linear forwards;
+}
+.sponsor:hover .detail {
+  display: block;
+  -ms-animation: fadein 0.5s 1 linear forwards;
+  -moz-animation: fadein 0.5s 1 linear forwards;
+  -webkit-animation: fadein 0.5s 1 linear forwards;
+  -o-animation: fadein 0.5s 1 linear forwards;
+  animation: fadein 0.5s 1 linear forwards;
 }
 #landing {
   background: url("img/landing.jpg") center center no-repeat;
