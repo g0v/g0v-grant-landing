@@ -569,3 +569,12 @@ width: 100%;
   -o-animation: fadeout 0.3s 1 linear forwards;
   animation: fadeout 0.3s 1 linear forwards;
 }
+.sep.block {
+  background: #f7b52c;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  position: relative;
+  z-index: 999;
+  box-shadow: none;
+}
