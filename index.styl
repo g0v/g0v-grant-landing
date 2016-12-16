@@ -317,3 +317,52 @@ h3
   background: #203c4f
 .carousel-indicators li
   border-color: #999
+
+#topics .topic-list
+  img
+    width: 200px
+    display: inline-block
+    margin: auto
+  .title
+    font-size: 1.5em
+    font-weight: 500
+  @media(max-width: 640px)
+    img
+      width: 100px
+    .title
+      font-size: 1.2em
+
+.gallery
+  .thumbnail
+    width: 100%
+    height: 160px
+  .desc
+    color: #999
+    font-size: 0.8em
+    padding: 10px
+    text-align: center
+    position: absolute
+    top: 5%
+    left: 5%
+    width: 90%
+    height: 80%
+    display: none
+    opacity: 0
+    color: #fff
+    background: rgba(0,0,0,0.6)
+    font-weight: 100
+    border-radius: 10px
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.6)
+  .img
+    background-position: center center
+    background-repeat: none
+    background-size: cover
+    width: 100%
+    height: 100%
+    opacity: 1
+  .thumbnail:hover
+    .desc
+      display: block
+      animation(fadein 0.3s 1 linear forwards)
+    .img
+      animation(fadeout 0.3s 1 linear forwards)
