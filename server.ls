@@ -324,7 +324,7 @@ update-file = ->
     try 
       desdir = path.dirname(des)
       if !fs.exists-sync(desdir) or !fs.stat-sync(desdir).is-directory! => mkdir-recurse desdir
-      fs.write-file-sync des, jade.render (fs.read-file-sync src .toString!),{filename: src, basedir: path.join(cwd)}
+      fs.write-file-sync des, jade.render (fs.read-file-sync src .toString!),{filename: src, basedir: path.join(cwd), +pretty}
       console.log "[BUILD] #src --> #des"
     catch
       console.log "[BUILD] #src failed: "
