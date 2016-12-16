@@ -11,12 +11,17 @@
         li(data-target='#dummy-carousel', data-slide-to='5')
         li(data-target='#dummy-carousel', data-slide-to='6')
         li(data-target='#dummy-carousel', data-slide-to='7')
+        li(data-target='#dummy-carousel', data-slide-to='8')
+        li(data-target='#dummy-carousel', data-slide-to='9')
+        li(data-target='#dummy-carousel', data-slide-to='10')
+        li(data-target='#dummy-carousel', data-slide-to='11')
+        li(data-target='#dummy-carousel', data-slide-to='12')
       // Wrapper for slides
       .carousel-inner(role='listbox')
         .item.active
           img(src='img/intro-slides/slide01.jpg')
           .carousel-caption
-        each i in ['02','03','04','05','06','10','11']
+        each i in ['01','02','03','04','05','06','07','08','09','10','11','12']
           .item
             img(src='img/intro-slides/slide' + i + '.jpg')
             .carousel-caption
