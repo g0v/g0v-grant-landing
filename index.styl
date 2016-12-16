@@ -318,7 +318,7 @@ h3
 .carousel-indicators li
   border-color: #999
 
-#topics
+#topics .topic-list
   img
     width: 200px
     display: inline-block
@@ -326,6 +326,11 @@ h3
   .title
     font-size: 1.5em
     font-weight: 500
+  @media(max-width: 640px)
+    img
+      width: 100px
+    .title
+      font-size: 1.2em
 
 .gallery
   .thumbnail
