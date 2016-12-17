@@ -581,3 +581,8 @@ width: 100%;
   z-index: 999;
   box-shadow: none;
 }
+a.anchor {
+  top: -40px;
+  visibility: hidden;
+  position: relative;
+}
